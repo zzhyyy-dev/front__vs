@@ -14,9 +14,7 @@ const PortalDoAluno = () => {
   const [userType, setUserType] = useState(localStorage.getItem('userType') || '');
   const [showProva, setShowProva] = useState(false); // Estado para controlar a exibição da prova
 
-  const handleProvaClick = () => {
-    setShowProva(true); // Quando o botão de prova for clicado, mostrar o conteúdo da prova
-  };
+ 
 
   useEffect(() => {
     const savedUserType = localStorage.getItem('userType');

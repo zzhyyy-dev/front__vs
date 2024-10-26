@@ -82,7 +82,7 @@ export const getProvas = async (userId) => {
 
 export const getCompetencias = async (userId) => {
   try {
-    const response = await fetch(`http://localhost:8080/student-competences/student/${userId}`, {
+    const response = await fetch(`http://localhost:8080/api/student-competences/student/${userId}`, {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',
